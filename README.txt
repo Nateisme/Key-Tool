@@ -1,42 +1,142 @@
-Key Tool - Keyboard & Mouse Macro Utility
-=========================================
+Key Tool Refurbished (KTR) is a keyboard, mouse, and controller macro utility for Windows PCs.
 
-This tool allows you to automate key presses and mouse clicks with customizable intervals, repeat counts, and toggle hotkeys. It's great for games, repetitive tasks, and quality-of-life automation.
+KTR supports:
 
-----------------------------
-How to Use:
-----------------------------
+* Keyboard macros
+* Mouse click macros
+* Controller macros
+* Analog stick emulation
+* Trigger emulation
+* Xbox 360 virtual controller output
+* DualShock 4 virtual controller output
+* Optional passthrough mode
+* Physical controller remapping through a virtual controller layer
 
-1. Open the `key_tool.exe` file.
-2. Set your preferred macro keys by clicking "Set Hold Keys" or "Set Press Keys".
-3. Configure key and mouse intervals, repeat values, and a hotkey toggle.
-4. Press "Start Macro" to begin, or use your chosen hotkey to toggle it on/off.
+ Features
 
-----------------------------
-Troubleshooting:
-----------------------------
+Keyboard Support
 
-If the program doesn’t launch or you see errors about missing modules, run the `setup.py` file once.
+* Hold keys continuously
+* Timed key presses
+* Multi-key combinations
 
-This will automatically install the required Python packages:
-- `keyboard`
-- `pynput`
+Mouse Support
 
-**To run it:**
-- Right-click → Open with → Python (if you have Python installed)
-- Or open Command Prompt (win+r then type cmd) then paste this: pip install keyboard pynput
-Once setup is complete, run `key_tool.exe` again.
+* Mouse click macros
+* Continuous click support
 
-----------------------------
-Included Files:
-----------------------------
-- `key_tool.exe`       → The main app
-- `key_tool.ico`       → App icon
-- `setup.py`           → (Optional) Fixes missing dependency errors
-- `README.txt`         → You're reading it :)
+Controller Support
 
-----------------------------
-Note: If the icon doesn't show up immediately, try moving the `.exe` out of the extracted folder or refresh the folder. Windows is weird sometimes.
-----------------------------
+* Xbox controller support
+* PlayStation controller support
+* Generic controller support
+* Analog sticks
+* Analog triggers
+* D-pad support
+* Touchpad click support in DS4 mode
 
-Enjoy!
+KTR can emulate:
+
+* Xbox 360 controllers
+* DualShock 4 controllers
+
+This allows games to detect KTR as a real controller.
+
+---
+
+ViGEmBus Driver (Required for virtual controller support.)
+
+Download:
+[https://github.com/nefarius/ViGEmBus/releases](https://github.com/nefarius/ViGEmBus/releases)
+
+Install the latest: ViGEmBusSetup_x64.msi
+
+HidHide (Optional but Recommended)
+
+Recommended for stubborn games that:
+
+* detect multiple controllers
+* assign KTR as Player 2
+* flicker between keyboard/controller prompts
+* ignore virtual controller input
+
+Download:
+[https://github.com/nefarius/HidHide/releases](https://github.com/nefarius/HidHide/releases)
+
+Install the latest HidHide_x64.exe
+
+HidHide Setup
+
+1. Open HidHide Configuration Client
+
+2. Add KTR.exe to Applications (This allows KTR to still see your physical controller)
+
+3. Hide Your Physical Controller
+
+Hide:
+
+* PS5 controller
+* PS4 controller
+* Xbox controller
+* other physical gamepads
+
+DO NOT hide:
+
+* keyboard
+* mouse
+* KTR virtual controller
+
+Running Macros
+
+1. Select Hold Inputs
+2. Select Press Inputs
+3. Press Start
+4. Press Stop to end the macro
+
+Some games may require:
+
+* restarting the game after launching KTR
+* HidHide
+* switching between Xbox and DS4 output modes
+
+ Troubleshooting:
+
+Game Does Not Detect Inputs
+
+Try:
+
+* launching KTR before the game
+* using HidHide
+* restarting the game
+* switching output mode
+
+Steam Sees Wrong Controller Type Restart KTR and choose a different virtual output mode. (only really matters if you care what buttons are displayed in games)
+
+KTR Does Not Detect Controller
+
+Try:
+
+* reconnecting the controller
+* refreshing controllers in KTR
+* restarting KTR
+* checking HidHide settings
+
+---
+
+# Credits
+
+KTR uses:
+
+* vgamepad
+* ViGEmBus
+* pygame
+* HidHide
+* PyInstaller
+
+Special thanks to the ViGEm and Nefarius projects for virtual controller support.
+
+---
+
+# Version
+
+Key Tool Refurbished V0.9.1
