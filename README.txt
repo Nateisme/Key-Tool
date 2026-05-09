@@ -47,7 +47,7 @@ This allows games to detect KTR as a real controller.
 ViGEmBus Driver (Required for virtual controller support.)
 
 Download:
-[https://github.com/nefarius/ViGEmBus/releases](https://github.com/nefarius/ViGEmBus/releases)
+https://github.com/nefarius/ViGEmBus/releases
 
 Install the latest: ViGEmBusSetup_x64.msi
 
@@ -61,7 +61,7 @@ Recommended for stubborn games that:
 * ignore virtual controller input
 
 Download:
-[https://github.com/nefarius/HidHide/releases](https://github.com/nefarius/HidHide/releases)
+https://github.com/nefarius/HidHide/releases
 
 Install the latest HidHide_x64.exe
 
